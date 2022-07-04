@@ -10,11 +10,13 @@ namespace CheckPoint2
     {
         public string Name { get; private set; }
         public int Age { get; set; }
+        public Company Company { get; private set; }
 
-        public Person(string name, int age)
+        public Person(string name, int age, Company company)
         {
             Name = name;
             Age = age;
+            Company = company;
         }
     }
 }

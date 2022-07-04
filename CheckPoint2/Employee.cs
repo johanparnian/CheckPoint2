@@ -10,12 +10,9 @@ namespace CheckPoint2
     {
         public DateTime HireDate { get; private set; }
 
-
-        public Employee(string name, int age, DateTime hireDate) : base(name, age)
+        public Employee(string name, int age, DateTime hireDate, Company company) : base(name, age, company)
         {
             HireDate = hireDate;
         }
-
-
     }
 }

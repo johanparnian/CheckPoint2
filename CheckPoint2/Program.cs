@@ -8,10 +8,10 @@ namespace CheckPoint2
         {
             Company company = new("AW", 100);
 
-            Person someGuy = new("Alladin", 20);
+            Person someGuy = new("Alladin", 20, company);
             company.AddEmployeeToList(someGuy);
 
-            Employee e1 = new("Johan", 33, DateTime.Now);
+            Employee e1 = new("Johan", 33, DateTime.Now, company);
             company.AddEmployeeToList(e1);
 
             company.PrintAllEmployees();

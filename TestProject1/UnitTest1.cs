@@ -28,9 +28,10 @@ namespace TestProject1
             bool check = false;
             string name = "Aladding";
             int age = 18;
-            Person P1 = new(name, age);
+            Company C1 = new("aw", 42);
+            Person P1 = new(name, age, C1);
 
-            if (P1.Name == name && P1.Age == age)
+            if (P1.Name == name && P1.Age == age && P1.Company == C1)
             {
                 check = true;
             }
@@ -44,11 +45,12 @@ namespace TestProject1
             bool check = false;
             string name = "Johan";
             int age = 34;
-            DateTime hireDate = DateTime.Now; 
-            Employee E1 = new(name, age, hireDate);
+            DateTime hireDate = DateTime.Now;
+            Company C1 = new("aw", 42);
+            Employee E1 = new(name, age, hireDate, C1);
 
 
-            if (E1.Name == name && E1.Age == age && hireDate == E1.HireDate)  
+            if (E1.Name == name && E1.Age == age && hireDate == E1.HireDate && E1.Company == C1)  
             {
                 check = true;
             }
