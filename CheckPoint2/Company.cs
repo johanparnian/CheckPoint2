@@ -8,5 +8,7 @@ namespace CheckPoint2
 {
     public class Company
     {
+        public string Name { get; set; }
+        public int EmployeeCount { get; set; }
     }
 }

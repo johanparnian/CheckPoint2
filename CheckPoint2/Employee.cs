@@ -8,5 +8,6 @@ namespace CheckPoint2
 {
     public class Employee
     {
+        public string HireDate { get; set; }
     }
 }
