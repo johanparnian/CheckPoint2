@@ -9,9 +9,19 @@ namespace TestProject1
         }
 
         [Test]
-        public void Test1()
+        public void TestCompanyInstance()
         {
-            Assert.Pass();
+            bool check = false;
+            Company C1 = new("aw", 50);
+
+            if (C1.Name == "aw" && C1.EmployeeCount==50)
+            {
+                check = true;
+            }
+            
+            Assert.IsTrue(check);
         }
+
+
     }
 }
