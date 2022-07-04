@@ -8,6 +8,6 @@ namespace CheckPoint2
 {
     interface IEmployeeCounter
     {
-        void EmployeeCounter();
+        void EmployeeCounter(Company company);
     }
 }

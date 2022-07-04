@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace CheckPoint2
 {
-    public class Employee : Person
+    public class Employee : Person, IEmployeeCounter
     {
         public DateTime HireDate { get; private set; }
 
         public Employee(string name, int age, DateTime hireDate, Company company) : base(name, age, company)
         {
             HireDate = hireDate;
+            EmployeeCounter(company);
+        }
+
+        public void EmployeeCounter(Company company)
+        {
+          company.EmployeeCount++;
         }
     }
 }
