@@ -10,5 +10,11 @@ namespace CheckPoint2
     {
         public string Name { get; set; }
         public int EmployeeCount { get; set; }
+
+        public Company(int employeeCount, string name = "N/A")
+        {
+            Name = name;
+            EmployeeCount = employeeCount;
+        }
     }
 }

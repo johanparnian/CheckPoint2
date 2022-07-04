@@ -9,5 +9,10 @@ namespace CheckPoint2
     public class Employee
     {
         public string HireDate { get; set; }
+
+        public Employee(string hireDate)
+        {
+            HireDate = hireDate;
+        }   
     }
 }
