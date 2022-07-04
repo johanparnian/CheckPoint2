@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CheckPoint2
 {
-    interface EmployeeCounter
+    interface IEmployeeCounter
     {
-
+        void EmployeeCounter();
     }
 }
