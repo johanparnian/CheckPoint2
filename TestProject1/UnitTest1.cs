@@ -22,6 +22,22 @@ namespace TestProject1
             Assert.IsTrue(check);
         }
 
+        [Test]
+        public void TestPersonInstance()
+        {
+            bool check = false;
+            string name = "Aladding";
+            int age = 18;
+            Person P1 = new(name, age);
+
+            if (P1.Name == name && P1.Age == age)
+            {
+                check = true;
+            }
+
+            Assert.IsTrue(check);
+        }
+
 
     }
 }
