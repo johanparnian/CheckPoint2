@@ -6,6 +6,16 @@ namespace CheckPoint2
     {
         static void Main(string[] args)
         {
+            Company company = new("AW", 100);
+
+            Person someGuy = new("Alladin", 20);
+            company.AddEmployeeToList(someGuy);
+
+            Employee e1 = new("Johan", 33, DateTime.Now);
+            company.AddEmployeeToList(e1);
+
+            company.PrintAllEmployees();
+
 
         }
     }
