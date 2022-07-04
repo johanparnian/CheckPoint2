@@ -8,6 +8,8 @@ namespace CheckPoint2
 {
     public class Company
     {
+        List<Employee> _employees;
+
         public string Name { get; private set; }
         public int EmployeeCount { get; set; }
 
