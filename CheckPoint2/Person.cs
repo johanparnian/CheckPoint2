@@ -11,7 +11,7 @@ namespace CheckPoint2
         public string Name { get; private set; }
         public int Age { get; set; }
 
-        public Person(string name = "N/A", int age = 0)
+        public Person(string name, int age)
         {
             Name = name;
             Age = age;

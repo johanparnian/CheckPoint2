@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CheckPoint2
 {
-    public class Employee
+    public class Employee : Person
     {
         public string HireDate { get; set; }
 
-        public Employee(string hireDate)
+        public Employee(string name, int age, string hireDate) : base(name, age)
         {
             HireDate = hireDate;
         }   
