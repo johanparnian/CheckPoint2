@@ -8,7 +8,7 @@ namespace CheckPoint2
 {
     public class Company
     {
-        List<Employee> _employees;
+        private List<Employee> _employees = new();
 
         public string Name { get; private set; }
         public int EmployeeCount { get; set; }
@@ -17,6 +17,20 @@ namespace CheckPoint2
         {
             Name = name;
             EmployeeCount = employeeCount;
+            
+        }
+
+        public void PrintAllEmployees()
+        {
+            foreach (var employee in _employees)
+            {
+                Console.WriteLine(employee);
+            }
+        }
+
+        public void AddEmployeeToList(Employee employeex)
+        {
+            _employees.Add(employeex);
         }
     }
 }

@@ -8,11 +8,14 @@ namespace CheckPoint2
 {
     public class Employee : Person
     {
-        public string HireDate { get; private set; }
+        public DateTime HireDate { get; private set; }
 
-        public Employee(string name, int age, string hireDate) : base(name, age)
+
+        public Employee(string name, int age, DateTime hireDate) : base(name, age)
         {
             HireDate = hireDate;
-        }   
+        }
+
+
     }
 }
