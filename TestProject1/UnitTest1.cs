@@ -17,7 +17,7 @@ namespace TestProject1
             if (C1.Name == "aw" && C1.EmployeeCount == 50)
             {
                 check = true;
-            }
+            } 
 
             Assert.IsTrue(check);
         }
