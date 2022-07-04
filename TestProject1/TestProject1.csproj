@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CheckPoint2\CheckPoint2.csproj" />
+    <ProjectReference Include="..\Niveau2\Niveau2.csproj" />
   </ItemGroup>
 
 </Project>
